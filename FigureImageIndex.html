@@ -1,17 +1,19 @@
+<!-- Project build a informational website for family business. -->
 <!DOCTYPE html>
 <html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="FigureImageIndex.css">
+    <link rel="stylesheet" type="text/css" href="LuckyMarket.css">
 </head>
 
 <body id="home" class="open-left">
     <div id="offcanvas-left" class="hide">
         <ul>
             <li><a href="#top">Top </a></li>
-            <li><a href="#quote">Quote </a></li>
+            <li><a href="#quote">Goods & Services </a></li>
+            <li><a href="#location">Location </a></li>
             <li><a href="#contact">Contact Us </a></li>
             <li><a href="#next.html">Next Page </a></li>
         </ul>
@@ -27,7 +29,8 @@
             <nav>
                 <ul>
                     <li><a href="#top">Top </a></li>
-                    <li><a href="#quote">Quote </a></li>
+                    <li><a href="#quote">Goods & Services </a></li>
+                    <li><a href="#location">Location </a></li>
                     <li><a href="#contact">Contact Us </a></li>
                     <li><a href="#next.html">Next Page </a></li>
                 </ul>
@@ -37,89 +40,48 @@
             <main id="top">
                 <article>
                     <figure class="hero">
-                        <img src="https://picsum.photos/1200/440/?image=201"
-                            alt="A laptop with a mouse on a desk and a pair of glasses." />
+                        <img src="LuckyMarket.jpg" alt="A convience store building." />
                         <figcaption>
-                            <h1>Learning HTML</h1>
+                            <h1>Lucky Market</h1>
                         </figcaption>
                     </figure>
-                    <h2 style="font-size: 2em">WHAT IS HTML?</h2>
+                    <h2 style="font-size: 2em">Goods & Services</h2>
                     <hr>
                     <p>
-                        <b>Hypertext Markup Language (HTML)</b> is the standard markup language for creating web pages
-                        and web applications. With <i>Cascading Style Sheets (CSS)</i> and <em>JavaScript</em>, it forms
-                        a triad of <strong>cornerstone technologies</strong> for the World Wide Web.
-
+                        <!-- ADD Text-->
+                        <b>Goods:</b> Our small convenience store provides local customers easy access to a range of
+                        everyday items. The variety in items includes coffee, snack foods, confectionery, soft drinks, tobacco
+                        products, alcohol, over-the-counter drugs, toiletries, and much more.
                     </p>
                     <p>
-                        Web browsers receive <mark>HTML documents</mark> from a web server or from local storage and
-                        render them into multimedia web pages. <a href="#">HTML describes</a> the structure of a web
-                        page semantically
-                        and originally included cues for the appearance of the document.
+                        <b>U-HAUL Services:</b>
+                        We are only a U-Haul pick-up center. Please call 1 (800) 789-3638 to reserve a U-Haul.
                     </p>
+                    <p>
+                        <b>Propane Services:</b>
+                        We refill propane tank sizes with LP gas. We offer competitive propane prices by the gallon,
+                        seven says a week.
                     </p>
-                    <blockquote cite="http://twitter.com" id="quote">
-                        "Every great developer you know got there by solving problems they were unqualified to solve
-                        until they actually did it." - Patrick McKenzie
-                    </blockquote>
-                    <!-- Tables-->
-                    <table class="styled">
-                        <thead>
-                            <tr>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Email</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <colgroup>
-                                <col style="background-color: blueviolet;">
-                            </colgroup>
-                            <colgroup>
-                                <col style="background-color: #f4e767;" span="2">
-                            </colgroup>
-                            <tr>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Email</th>
-                            </tr>
-                            <tr>
-                                <td>John</td>
-                                <td>Doe</td>
-                                <td>Johnny.doe@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <td>Jane</td>
-                                <td>Doe</td>
-                                <td>i_heart_johnny@gmail.com</td>
-                            </tr>
-                        </tbody>
+                    <h2 id = "location" style="font-size: 2em">Location</h2> 
+                    <hr>
+                    <a href="https://www.google.com/maps/place/Lucky+Market/@47.9973135,-122.1888219,17z/data=!3m1!4b1!4m5!3m4!1s0x549aaadad43144e3:0xab945e68e6148cbf!8m2!3d47.9973299!4d-122.1888216">
+                        View map</a>
 
-                    </table>
-                    <pre>
-/* css */
-html,body {
-padding: 0;
-height: 100%;
-margin: 0px;
-overflow: hidden;
-}
-                    </pre>
                 </article>
             </main>
             <footer>
                 <section>
                     <table class="styled">
                         <tr>
-                            <th colspan="2">Working Hours</th>
+                            <th colspan="2">Store Hours</th>
                         </tr>
                         <tr>
                             <td>mon-fri</td>
-                            <td>7am-6pm</td>
+                            <td>9am-10pm</td>
                         </tr>
                         <tr>
                             <td>sat-sun</td>
-                            <td>closed</td>
+                            <td>9am-11pm</td>
                         </tr>
                     </table>
                     <table class="styled">
@@ -128,30 +90,28 @@ overflow: hidden;
                         </tr>
                         <tr>
                             <td>Cell:</td>
-                            <td>123.345.6789</td>
+                            <td>425.773.0180</td>
                         </tr>
                         <tr>
                             <td>Email:</td>
-                            <td>info@learninghtml.com</td>
+                            <td>LuckyMarket@gmail.com</td>
                         </tr>
                     </table>
                 </section>
                 <section>
-                    <form action="/action_page.php">
-                        <legend><b>Contact Us<b></legend>
-                        <input type="text" name="fullname" placeholder="Full name"></input>
-                        <input type="text" name="email" placeholder="Email"></input>
+                    <form action="/LuckyMarket.php">
+                        <legend><b>Contact Us</b></legend>
+                        <input type="text" name="fullname" placeholder="Full Name">
+                        <input type="text" name="email" placeholder="Email">
+                        <input type="text" name="phone number" placeholder="Phone Number">
                         <textarea name="msg" placeholder="Write message here"></textarea>
-                        <input type="submit" value="submit">
+                        <input type="submit" value="Submit">
                     </form>
                 </section>
             </footer>
-        </section>          
+        </section>
     </div>
     <script type="text/javascript" src="index.js"></script>
 </body>
+
 </html>
-<!-- Bonus Materials -->
-<!-- Learn html vocab: http://apps.workflower.fi/vocabs/html/en -->
-<!-- Images: https://www.w3schools.com/html/html_images.asp -->
-<!-- Video Element: https://www.w3schools.com/html/html5_video.asp -->
